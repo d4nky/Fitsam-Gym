@@ -6,35 +6,193 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Fitsam Gym</title>
 		<link rel="stylesheet" href="style.css" />
-		<link rel="shortcut icon" href="img/fitsam-logo-favicon.png" type="image/png" />
+		<link
+			rel="shortcut icon"
+			href="img/fitsam-logo-favicon.png"
+			type="image/png"
+		/>
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
 	<body>
-		<nav class="font-custom absolute z-20 flex justify-center items-center w-full h-38 -top-4 bg-transparent text-white text-3xl">
-			<div class="text-center w-1/2">
-				<a href="#main">programmes</a>
+		
+		<header
+			class="font-custom relative flex flex-col items-center justify-center h-screen overflow-hidden"
+		>
+		<nav
+			class="font-custom transition-all fixed top-0 z-30 flex justify-center items-center w-full py-2 bg-transparent text-white text-3xl"
+		>
+			<div class="flex justify-evenly text-center w-1/2 text-white">
+				<a class="transition ease-linear hover:text-slate-300" href=""
+					>programmes</a
+				>
+				<a class="transition ease-linear hover:text-slate-300" href="#main"
+					>horaires</a
+				>
 			</div>
-				<img class="w-36" src="img/fitsam-logo.png" alt="">
-				<div class="flex justify-evenly text-center w-1/2">
-					<a href="">horaires</a>
-					<a href="#contact">Contact</a>
-				</div>
+			<a id="navbar-logo" href=""><img class="w-32" src="img/fitsam-logo.png" alt="fitsam-logo" /></a>
+			<div class="flex justify-evenly text-center w-1/2">
+				<a class="transition ease-linear hover:text-slate-300" href=""
+					>notre salle</a
+				>
+				<a class="transition ease-linear hover:text-slate-300" href="#contact"
+					>Contactez nous</a
+				>
+			</div>
 		</nav>
-		<header class="font-custom relative flex items-center justify-center h-screen mb-12 overflow-hidden ">
-			<div class="z-20  text-white flex flex-col justify-center items-center">
-				<h1 class="text-6xl">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-				<button class="border-2 border-white py-2 px-4"><a href="#main">Découvrez</a></button>
+			<div data-aos="fade-bottom" class="z-20 text-white flex flex-col justify-center items-center">
+				<h1 class="text-6xl">Salle de musculation/fitness homme et femme</h1>
+				<button class="border-2 border-white py-2 px-4">
+					<a href="#main">Découvrez</a>
+				</button>
 			</div>
 			<div class="bg-black opacity-70 absolute z-10 w-full h-screen"></div>
-			<video autoplay loop muted class="absolute -z-10 w-auto min-w-full min-h-full max-w-none object-fill scale-110">		
-				<source src="/dist/vid/fitsam-background.mp4" type="video/mp4"/>
+			<video
+				autoplay
+				loop
+				muted
+				class="absolute -z-10 w-auto min-w-full min-h-full max-w-none object-fill scale-110"
+			>
+				<source src="/dist/vid/fitsam-background.mp4" type="video/mp4" />
 			</video>
 		</header>
-		<section class="h-screen bg-black text-white" id="main">
-			<div></div>
+		<section>
+			<div id="carouselExampleIndicators" class="carousel slide relative" data-bs-ride="carousel">
+  <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+  <div class="carousel-inner relative w-full overflow-hidden">
+    <div class="carousel-item active float-left w-full">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+        class="block w-full"
+        alt="Wild Landscape"
+      />
+    </div>
+    <div class="carousel-item float-left w-full">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/new/slides/042.webp"
+        class="block w-full"
+        alt="Camera"
+      />
+    </div>
+    <div class="carousel-item float-left w-full">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp"
+        class="block w-full"
+        alt="Exotic Fruits"
+      />
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+    type="button"
+    data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+    type="button"
+    data-bs-target="#carouselExampleIndicators"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 		</section>
-		<section class="h-screen" id="contact"></section>
+		<section class="h-screen bg-black text-white" id="main">
+			<div class="font-custom text-left flex flex-col justify-center items-center h-3/4 w-1/2">
+				<p class="text-6xl">PROGRAMMES</p>
+				<p class="max-w-lg ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sequi commodi veritatis, eligendi dolor natus! Iure consequatur accusamus quasi unde architecto adipisci alias in cumque, odio sed explicabo facere! Culpa?</p>
+			</div>
+			<div class="w-full z-30">
+				<img class="object-cover" src="https://instagram.falg6-1.fna.fbcdn.net/v/t51.2885-15/145078882_465485741264890_1789257565332564345_n.jpg?se=7&stp=dst-jpg_e35&_nc_ht=instagram.falg6-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=UUUFJa1xdbIAX96k3-5&edm=ALQROFkBAAAA&ccb=7-4&ig_cache_key=MjUwMTAwOTg5NDg2NTUzNzA4MA%3D%3D.2-ccb7-4&oh=00_AT_KT-VG73qAWCL-ZGXObUavO2wBIiEB1b2l2uyadO8RYg&oe=62251B70&_nc_sid=30a2ef" alt="">
+			</div>
+		</section>
+		<section class="h-screen" id="horaires"></section>
+		<section class="h-screen"></section>
+		<footer class="flex justify-start items-center shadow-2xl">
+			<div class="mapouter shadow-2xl">
+				<div class="gmap_canvas">
+					<iframe
+						width="1080"
+						height="500"
+						id="gmap_canvas"
+						src="https://maps.google.com/maps?q=fitsam%20gym&t=&z=13&ie=UTF8&iwloc=&output=embed"
+						frameborder="0"
+						scrolling="no"
+						marginheight="0"
+						marginwidth="0"
+					></iframe
+					><a href="https://fmovies-online.net"></a><br /><style>
+						.mapouter {
+							position: relative;
+							text-align: right;
+							height: 350px;
+							width: 685px;
+						}</style
+					><a href="https://www.embedgooglemap.net"></a
+					><style>
+						.gmap_canvas {
+							overflow: hidden;
+							background: none !important;
+							height: 350px;
+							width: 685px;
+						}
+					</style>
+				</div>
+			</div>
 
+			<img class="ml-24" src="img/fitsam-logo.png" alt="" />
+			<div class="ml-12 font-custom">
+				<div>
+					<div>
+						<h2 class="text-4xl underline">Adresse</h2>
+						<p class="text-xl">Birtouta 16045, Fitsam Gym.</p>
+					</div>
+					<div>
+						<h2 class="text-4xl underline">contact</h2>
+						<p class="text-xl">023 580 850</p>
+						<p class="text-xl">0554 291 633</p>
+					</div>
+					<div>
+						<h2 class="text-4xl underline">E-mail</h2>
+						<p class="text-xl">Fitsamgym2022@gmail.com</p>
+					</div>
+					<div class="flex justify-start items-center mt-2">
+						<a href="https://www.facebook.com/fitsam.gym/"
+							><img class="w-8 mr-4" src="img/facebook.svg" alt=""
+						/></a>
+						<a href="https://www.instagram.com/fitsam.gym/"
+							><img class="w-8 mx-4" src="img/instagram.svg" alt=""
+						/></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="/node_modules/tw-elements/dist/js/index.min.js"></script>
 		<script src="main.js"></script>
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>

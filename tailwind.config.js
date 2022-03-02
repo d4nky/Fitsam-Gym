@@ -1,5 +1,5 @@
 module.exports = {
-	content: ["./dist/*.html"],
+	content: ["./dist/*.html", "./node_modules/tw-elements/dist/js/**/*.js"],
 	theme: {
 		fontSize: {
 			xs: ".75rem",
@@ -63,5 +63,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require("tw-elements/dist/plugin")],
 };
