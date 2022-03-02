@@ -4288,8 +4288,8 @@ textarea.form-control.is-invalid{
   justify-content: space-evenly;
 }
 
-.gap-16{
-  gap: 4rem;
+.gap-12{
+  gap: 3rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
